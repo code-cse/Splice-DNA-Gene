@@ -1,5 +1,5 @@
 
-## Project Structure
+#### Project Structure
 
 ```
 ├── data                 # Data Splice Junction 
@@ -12,7 +12,7 @@
 ```
     
 
-## Dataset description
+#### Dataset description
 
 The domain consists of 60 variables, representing a sequence of DNA bases an additional class Variable.
 The task is to determine if the middle of the sequence is a splice junction and what is its type:
@@ -57,7 +57,7 @@ Here, the data set is split into 5 folds. In the first iteration, the first fold
  P(Li = r1, Li+1 = r2, Li+2 = r3) = P(Li = r1)P(Li+1 = r2)P(Li+2 = r3)
 
 
-### Model Architectrue
+#### Model Architectrue
 
 Each DNA read is a sequence of four ```[C,A,G,T]``` types of nucleotides and needs to be converted into numerical representations for machine learning.
 
@@ -76,7 +76,7 @@ seq_len: Length of each sequence(default: 20)
 word_size: Vocabulary length(default: 64)
 
 
-## Running ML training and inference
+#### Running ML training and inference
 
 Install packages required by `models`
 
@@ -84,7 +84,7 @@ Install packages required by `models`
 ```$ pip install -r requirements.txt```
 
 
-### Input Output Example
+#### Input Output Example
 
 `Input`
 
@@ -121,11 +121,11 @@ CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTG
 `EI_Donor : 2            Acceptor_IE : 2         No-Junction : 1 `
 
 
-### Run scripts
+#### Run scripts
 
 `python app.py`
 
-### Accuracy: 99.27 %
+#### Accuracy: 99.27 %
 
 #### References:
 
