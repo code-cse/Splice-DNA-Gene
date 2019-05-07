@@ -1,0 +1,7 @@
+tensorflow
+sklearn
+scipy
+matplotlib
+flask
+flask-cors
+requests
