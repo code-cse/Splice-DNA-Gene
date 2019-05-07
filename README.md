@@ -1,16 +1,4 @@
 
-### Research Paper Reference for this repository:
-
-1. [DNA-Level Splice Junction Prediction using Deep
-Recurrent Neural Networks](https://arxiv.org/pdf/1512.05135.pdf)
-
-2. [Classification of eukaryotic splice-junction genetic sequences using
-averaged one-dependence estimators with subsumption resolution](https://core.ac.uk/download/pdf/82482313.pdf)
-
-### Dataset Links
-
-[Splice-Gene-Dataste - Dataset Links](http://www.jmlr.org/papers/volume1/meila00a/html/node32.html)
-
 ## Project Structure
 
 ```
@@ -114,7 +102,6 @@ If input gene sequence length is 300.
 
 "CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTGTCTTTTTCAGGAAGTGAATAAGAAGATGACAGTGTTTCAAAGGGCACTGTGGTAGGCACCTATAGTCCCAGCTACTTGGGAGGCTGAGGCAAGAGAATTGGGGACGGGCTGACCACGGGGGCGGGGCCAGGGTCTCACACCCTCCAGAGGATGTACGGCTCAACATACAGGGTTCATGGTGGCAAGAAGATAGCAAGATTTAAATTATGGCCAGTGACTA"
 
-
 Output will contain:
 
 Four json:
@@ -127,19 +114,9 @@ Four json:
 
 ```result : ["Donor-EI", "No-Junction", "Donor-EI", "Acceptor-IE", "Acceptor-IE"]```
 
-Gene output sequence will be shown in color 
-
-`If Donor-EI than green color sequence`
-
-`If Acceptor-IE than blue color sequence`
-
-`If No-Junction than red color sequence.`
-
 Example:
 
 CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTGTCTTTTTCAGGAAGTGAATAAGAAGATGACAGTGTTTCAAAGGGCACTGTGGTAGGCACCTATAGTCCCAGCTACTTGGGAGGCTGAGGCAAGAGAATTGGGGACGGGCTGACCACGGGGGCGGGGCCAGGGTCTCACACCCTCCAGAGGATGTACGGCTCAACATACAGGGTTCATGGTGGCAAGAAGATAGCAAGATTTAAATTATGGCCAGTGACTA
-
-
 
 `EI_Donor : 2            Acceptor_IE : 2         No-Junction : 1 `
 
@@ -148,14 +125,20 @@ CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTG
 
 `python app.py`
 
-
-### Input data:
-
-In the data folder `input_data.txt` contains the input gene sequence for `dna-splice-junction-prediction`.
-
-
 ### Accuracy: 99.27 %
 
+#### References:
 
+#### Research Paper Reference for this repository:
+
+1. [DNA-Level Splice Junction Prediction using Deep
+Recurrent Neural Networks](https://arxiv.org/pdf/1512.05135.pdf)
+
+2. [Classification of eukaryotic splice-junction genetic sequences using
+averaged one-dependence estimators with subsumption resolution](https://core.ac.uk/download/pdf/82482313.pdf)
+
+#### Dataset Links
+
+[Splice-Gene-Dataste - Dataset Links](http://www.jmlr.org/papers/volume1/meila00a/html/node32.html)
 
 
