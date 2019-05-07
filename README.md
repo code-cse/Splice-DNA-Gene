@@ -61,19 +61,7 @@ Here, the data set is split into 5 folds. In the first iteration, the first fold
 
 Each DNA read is a sequence of four ```[C,A,G,T]``` types of nucleotides and needs to be converted into numerical representations for machine learning.
 
-LSTM
-
-n_units: Number of hidden reccurent units in a singe layer(default: 90)
-
-n_layers: Number of layers in a single stack of the model(default: 3)
-
-n_classes: Number of classification categories(default: 3)
-
-n_seq: Number of shift sequences 0-shift, 1-shift and 2-shift. i.e 3 in our case(default: 3)
-
-seq_len: Length of each sequence(default: 20)
-
-word_size: Vocabulary length(default: 64)
+LSTM - Long Short Term Memory.
 
 
 #### Running ML training and inference
@@ -96,29 +84,24 @@ Predicted Gene sequence equal length of input.
 
 Every `60x` will be either `Donor-IE`,  `Acceptor-EI` or  `No-Junction`.
 
-For example:
+##### Example 1:
 
-If input gene sequence length is 300.
+AAACTGGGGCCTGAGACGCCCCTGGCCATGGACCGCTTCCCATACCTGGCTCTGTCCAAGTCCCCTCACAGGGAAATTTTCTTCCCACAG
+GTGGAAAAGGAGGGAGCTACTCTCAGGCTGTGGGGCTTGGCCTGGCTGCCCCGCTCACGCCACTTCTCTCCCGCCCCCAGACACCAATGG
 
-"CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTGTCTTTTTCAGGAAGTGAATAAGAAGATGACAGTGTTTCAAAGGGCACTGTGGTAGGCACCTATAGTCCCAGCTACTTGGGAGGCTGAGGCAAGAGAATTGGGGACGGGCTGACCACGGGGGCGGGGCCAGGGTCTCACACCCTCCAGAGGATGTACGGCTCAACATACAGGGTTCATGGTGGCAAGAAGATAGCAAGATTTAAATTATGGCCAGTGACTA"
+##### Output:
 
-Output will contain:
+![alt text](visualization/1.png)
 
-Four json:
+##### Example 2:
 
-`EI_Donor : 2`
+TCAAGAACGGTTCCCTCTTTGCCTTCCGAGGTGAATCCAGGGCAGGTACTGGGGATGCGGGTTCTAATCATTTCACCATTTTTGTTATTCGTTTTAAAAC
+ATCTATCTGGAGGCAGGACAAACTGTCAGGGGAAGACCTACCTCTTCAAGGTGCCAGGGGCTGTGGGCCAGGGTAGAAAGTTTACTAATTTAAAGACCTG
+TTTCCCATAGGAGCTCAGTCTGAATATTCTTGGAGAAAGACTTGCCTATAATCTTCCTTGTCTTTTTCAGGAAGTGAATAAGAAGATGACAGTGTTTCAA
 
-`Acceptor_IE : 2`
+##### Output:
 
-`No-Junction : 1` 
-
-```result : ["Donor-EI", "No-Junction", "Donor-EI", "Acceptor-IE", "Acceptor-IE"]```
-
-Example:
-
-CCACCCTCCAGCCCCCAACTCCTCCTGCAGACAAGCTGGTGTCTAAGAACTACCCGGACTCTTGCCTATAATCTTCCTTGTCTTTTTCAGGAAGTGAATAAGAAGATGACAGTGTTTCAAAGGGCACTGTGGTAGGCACCTATAGTCCCAGCTACTTGGGAGGCTGAGGCAAGAGAATTGGGGACGGGCTGACCACGGGGGCGGGGCCAGGGTCTCACACCCTCCAGAGGATGTACGGCTCAACATACAGGGTTCATGGTGGCAAGAAGATAGCAAGATTTAAATTATGGCCAGTGACTA
-
-`EI_Donor : 2            Acceptor_IE : 2         No-Junction : 1 `
+![alt text](visualization/2.png)
 
 
 #### Run scripts
