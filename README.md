@@ -1,3 +1,6 @@
+## Splice DNA Gene
+
+This repo is used to splice the DNA sequence based on CAGT.
 
 #### Project Structure
 
