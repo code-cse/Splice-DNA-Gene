@@ -1,6 +1,7 @@
 ## Splice DNA Gene
 
-This repo is used to splice the DNA sequence based on CAGT.
+This repo is used to splice the DNA sequence based on CAGT:
+
 `C : Cytosine`
 
 `A : Adenine`
